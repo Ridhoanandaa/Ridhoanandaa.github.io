@@ -1,0 +1,293 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+}
+.bg-myblue{
+    background-color:#daeaf6;
+}
+.box-menu-150{
+    width: 100%;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid rgba(208, 207, 207,.6);
+}
+.box-menu-100{
+    width: 100%;
+    height: 100px;
+    border-radius: 5px;
+    border: 1px solid rgba(208, 207, 207,.6);
+}
+.box-menu-0{
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid rgba(208, 207, 207,.6);
+    overflow: hidden;
+}
+
+.box-menu-shadow{
+    box-shadow: 1px 2px 5px  rgba(0, 0, 0,.2);
+}
+
+.myborder-radius{
+    border-radius: 10px 10px 10px 10px;
+}
+footer{
+    width: 100%;
+}
+
+.nav-hover a{
+    transition: .1s ease-in-out;
+}
+.nav-hover a:active{
+    transform: scale(.9);
+}
+.box-menu-0 .icon-bg {
+    width: 80px;
+    height: 80px;
+}
+
+.box-model-300{
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
+    border: 1px solid rgba(208, 207, 207,.6);
+    background: rgb(255,255,255);
+}
+
+/* imgBox */
+.mycard{
+    margin-top: 80px;
+    position: relative;
+    width: 350px;
+    height: 190px;
+    background-color: white;
+    border-radius: 20px;
+    box-shadow:  o 35px 80px rgba(0, 0, 0,0.15);
+    transition: 0.5s;
+}
+
+.mycard:hover{
+    height: 450px;
+}
+.imgBx{
+    position: absolute;
+    left: 50%;
+    top: -50px;
+    transform: translateX(-50%);
+    width :150px ;
+    height: 150px;
+    background: #fff;
+    border-radius: 20px;
+    box-shadow: 0 15px 50px rgba(0, 0, 0,0.35);
+    overflow: hidden;
+    transition: 0.5s;
+}
+
+.mycard:hover .imgBx{
+    width: 250px;
+    height: 250px;
+}
+
+.imgBx img{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mycard .profil-content{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    overflow: hidden;
+}
+
+.mycard .profil-content .details{
+    padding: 40px;
+    text-align: center;
+    width: 100%;
+    transition: 0.5s;
+    transform: translateY(190px);
+}
+.mycard:hover .profil-content .details{
+    transform: translateY(0px);
+}
+.mycard .profil-content .details h2{
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em ;
+}
+
+.mycard .profil-content .details h2 span{
+    font-size: 0.75em;
+    font-weight: 500;
+    opacity: 0.5;
+}
+
+.mycard table{
+    width: 100%;
+    font-size: 1.25em;
+    font-weight: 600;
+    color: #555;
+    line-height: 1.2em ;
+    
+}
+.mycard table td{
+    padding: 5px;
+}
+
+.rounded-start-pill-top{
+    border-radius: 100px 0px 0px 0px;
+}
+
+.input-no-bordered{
+    border: none;
+    outline: none;
+    padding: 5px;
+    color: grey;
+}
+
+.padding-td tr td, .padding-td thead th{
+    padding: 15px;
+}
+
+.mycard-2{
+    margin-top: 80px;
+    width: 350px;
+    height: 450px;
+    background-color: rgb(87, 80, 80);
+    border-radius: 5px;
+}
+
+.mycard-2 .head{
+    width: 100%;
+    height: 50%;
+    background: url("../img/wave-lengkung-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mycard-2 .head .imgBox-card{
+    width :150px;
+    height: 150px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mycard-2 .head .imgBox-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mycard-2 .body{
+    height: 50%;
+}
+
+
+.mycard-3{
+    margin-top: 80px;
+    width: 350px;
+    height: 450px;
+    background-color:white;
+    border-radius: 5px;
+}
+
+.mycard-3 .head{
+    width: 100%;
+    height: 30%;
+    background: url("../img/wave-5-top-primary.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.mycard-3 .head .imgBox-card{
+    width :100px;
+    height: 100px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.mycard-3 .head .imgBox-card img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.mycard-3 .body{
+    height: 80%;
+}
+
+.imgbox-profil-navbar{
+    height: 150px;
+    width: 150px;
+    overflow: hidden;
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.imgbox-profil-navbar img{
+
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 600px) {
+    .imgbox-profil-navbar{
+        display: none;
+    }
+  }
+/* imgBox */
+
+
+/* imgBx-profil */
+.imgbox-profil{
+    width :300px ;
+    height: 300px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 10px solid white;
+}
+
+.imgbox-profil img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.bgBox-up{
+    background-image: url("../img/wave.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgBox-up-lengkung{
+    background-image: url("../img/wave-lengkung.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgBox-down-lengkung{
+    background-image: url("../img/wave-lengkung-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.bgBox-down{
+    background-image: url("../img/wave-down.svg");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+/* imgBx-profil */
+
+/* footer */
+footer ol ul{
+    list-style-type: circle;
+}
+/* footer */
