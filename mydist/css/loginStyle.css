@@ -5,7 +5,9 @@ body{
     font-family: 'Jost', sans-serif;
     color: white;
     transition: .8s ease-in-out ;
-    background: linear-gradient(to bottom, white,#CAEBF2);
+    background: url(/mydist/img/rsud-rubini-mpw.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .container{
@@ -18,51 +20,38 @@ body{
 .main{
 
     height: 100vh;
-    width: 50%;
+    width: 60%;
     display: flex;
-    justify-content:end;
+    justify-content:center;
     align-items: center;
     padding: 50px;
     box-sizing: border-box;
 }
 
-.side{
-    height: 100vh;
-    width: 50%; 
-    display: flex;
-    justify-content: center;
-    align-items: flex-start;
-    flex-direction: column;
-    color: rgb(13, 164, 214);
-}
 
 .header h1{
     font-size: 3em;
     font-weight: bold;
 }
 
-.side a{
-    padding: 10px;
-    text-decoration: none;
-    border: 2px solid rgb(13, 164, 214);
-    color: rgb(13, 164, 214);
-    border-radius: 20px;
-    transition: .8s;
-}
-
-.side a:hover{
-    background-color: rgb(13, 164, 214);
-    color: white;
-}
 
 
 .box{
     width:  400px;
     height: 550px;
-    background: rgb(13, 164, 214);
+    background: lightgreen;
     overflow: hidden;
-    border-radius: 10px;
-    box-shadow: 5px 10px 50px rgb(219, 218, 218);
+}
+.box2{
+    width:  600px;
+    height: 550px;
+    backdrop-filter: blur(9px) saturate(55%);
+    -webkit-backdrop-filter: blur(9px) saturate(55%);
+    background-color: rgba(255, 255, 255, 0.09);
+    border: 1px solid rgba(209, 213, 219, 0.3);
+    overflow: hidden;
+    padding: 20px;
+    box-sizing: border-box;
 }
 
 #chk{
@@ -119,7 +108,7 @@ input{
     width: 60%;
     padding: 15px;
     color: white;
-    background-color: rgb(122, 198, 224);
+    background-color: lightgreen;
     justify-content: center;
     display: block;
     margin: 20px auto ;
@@ -130,7 +119,6 @@ input{
     cursor: pointer;
 }
 .button:hover{
-    background-color: rgb(13, 164, 214);
     transform: scale(.9);
 }
 
@@ -146,7 +134,7 @@ input{
 
 .login label{
     margin-top: 10px;
-    color: rgb(122, 198, 224);
+    color: lightgreen;
     transform: scale(.8);
 }
 
@@ -175,5 +163,8 @@ input{
     }
     .main{
         width: 100%;
+    }
+    .box2{
+        display: none;
     }
 }
