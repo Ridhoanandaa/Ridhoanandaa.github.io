@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,400;1,500&family=Ubuntu:wght@400;500;700&display=swap');
 *{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     font-size: 14px;
@@ -294,3 +296,186 @@ footer ol ul{
     list-style-type: circle;
 }
 /* footer */
+
+
+/* card-5 */
+.card-5{
+    background-color: white;
+    width: 150px;
+    height: 200px;
+    position: relative;
+    border-radius: 8px;
+    box-shadow: 0 0 10px 1px rgba(0, 0, 0,0.15);
+
+}
+
+.card-5 .info{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.card-5 .info .name{
+    font-size: 18px;
+    color: lightgreen ;
+    position: absolute;
+    top: 50px;
+
+    
+}
+.card-5 .info .nip{
+    font-size: 12px;
+    color: black ;
+    position: absolute;
+    top: 75px;
+
+}
+.card-5 .info .jabatan{
+    font-size: 15px;
+    color: lightgreen ;
+    position: absolute;
+    top: 100px;
+
+}
+
+.card-5 .Mybutton{
+    position: absolute;
+    top: 150px;
+}
+.card-5 .info .btn {
+    width: 50px;
+    box-sizing: border-box;
+    padding: 5px;
+    font-size: 11px;
+}
+
+.card-5 .photo{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.card-5 .photo img{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card-5:hover .photo img{
+    position: absolute ;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.card-5:hover .photo{
+    transform: scale(.5,.35) translateY(-250px);
+    border-radius: 50%;
+}
+/* card-5 */
+
+/* card-6 */
+.card-6{
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
+    border-radius: 50%;
+    background: linear-gradient(45deg, rgb(1, 228, 1),lightgreen);
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    transition: all .3s ease-in-out;
+    margin: 10px;
+}
+
+.card-6:hover{
+    height: 470px;
+    width: 350px;
+    border-radius: 5px;
+}
+
+.card-6 .wrap img{
+    position: relative;
+    z-index: 20;
+    border-radius: 50%;
+    display: block;
+    height: 200px;
+    width: 200px;
+    border: 5px solid #fff;
+    object-fit: cover;
+    margin: 20px auto;
+    transition: .8s;
+}
+
+.card-6 .wrap img.active{
+    height: 470px;
+    width: 350px;
+    border: 5px solid #fff;
+    margin: 0px auto;
+    border: none;
+    border-radius: 5px;
+}
+
+.card-6 .wrap .name{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 30px;
+    font-weight: 500;
+    padding: 10px;
+    line-height: 25px;
+}
+.card-6 .wrap .nip{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 17px;
+    margin: 10px 0;
+    line-height:0px;
+}
+.card-6 .wrap .jabatan{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 17px;
+}
+.card-6 .wrap .content{
+    font-family: 'Poppins', sans-serif;
+    color: #fff;
+    font-size: 17px;
+}
+
+.card-6 .icons{
+    position: relative;
+    margin-top: -420px;
+    margin-left: 10px;
+    list-style: none;
+}
+.card-6 .icons li{
+    height: 40px;
+    width: 40px;
+    opacity: 0;
+    margin: 5px 0;
+    transition: all .3s ease-in-out;
+    
+}
+.card-6:hover .icons li{
+    opacity: 1;
+    
+}
+.card-6 .icons li a{
+    background-color: #fff;
+    height: 100%;
+    width: 100%;
+    display: block;
+    line-height: 40px;
+    border-radius: 50%;
+
+}
+
+/* card-6 */
