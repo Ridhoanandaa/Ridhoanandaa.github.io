@@ -5,6 +5,9 @@
 .bg-myblue{
     background-color:#daeaf6;
 }
+.bg-mygreen{
+    background-color: #D0F4EA;
+}
 .box-menu-150{
     width: 100%;
     height: 150px;
@@ -108,7 +111,7 @@ footer{
 }
 
 .mycard .profil-content .details{
-    padding: 40px;
+    padding: 50px;
     text-align: center;
     width: 100%;
     transition: 0.5s;
