@@ -479,3 +479,7 @@ footer ol ul{
 }
 
 /* card-6 */
+
+.link-active{
+    border-right: 5px solid green;
+}
