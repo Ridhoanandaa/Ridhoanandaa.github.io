@@ -486,8 +486,8 @@ footer ol ul{
 
 bg-nav-line {
  
-   style="background: url(mydist/img/layered-waves-haikei.svg); 
+   background: url(mydist/img/layered-waves-haikei.svg); 
     background-repeat: no-repeat; 
-    background-size: cover;" 
+    background-size: cover; 
     
 }
