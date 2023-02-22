@@ -14,7 +14,7 @@
 </head>
 <body>
     <div class="wrapper">
-      <aside class="navbar navbar-vertical navbar-expand-lg bg-nav-line">
+      <aside class="navbar navbar-vertical navbar-expand-lg bg-nav-line" >
         <div class="container-fluid">
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
             <span class="navbar-toggler-icon"></span>
@@ -392,22 +392,95 @@
             </div>
           </div>
 
-          <div class="card p-3 bg-white mt-3">
-            <div class="row">
-                <div class="col-md-6">
-                    <img src="/mydist/img/Admin-1.jpg" alt="">
+          <div class="card p-3 mt-3">
+            <h2>Profesi</h2>
+            <div class="table-responsive">
+                <table class="table table-vcenter">
+                    <thead>
+                    <tr>
+                        <th>Nama Profesi</th>
+                        <th>Jumlah</th>
+                        <th>Jumah Laki Laki</th>
+                        <th>Jumlah Perempuan</th>
+                        <th class="w-1">Akssi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >Dokter</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Farmasi</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Admin</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 </div>
-                <div class="col-md-6 p-4">
-                    <h1>Syarat Kenaikan Pangkat</h1>
-                    <ul>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                        <li>lorem</li>
-                    </ul>
+          </div>
+          <div class="card p-3 mt-3">
+            <h2>Data 2</h2>
+            <div class="table-responsive">
+                <table class="table table-vcenter">
+                    <thead>
+                    <tr>
+                        <th>Nama Profesi</th>
+                        <th>Jumlah</th>
+                        <th>Jumah Laki Laki</th>
+                        <th>Jumlah Perempuan</th>
+                        <th class="w-1">Akssi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >Dokter</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Farmasi</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Admin</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
                 </div>
-            </div>
           </div>
 
         </div>
@@ -464,7 +537,7 @@
         new Chart(ctx2, {
             type: 'doughnut',
             data: {
-            labels: ['Purple', 'Orange'],
+            labels: [],
             datasets: [{
                 label: '# of Votes',
                 data: [2, 3],
