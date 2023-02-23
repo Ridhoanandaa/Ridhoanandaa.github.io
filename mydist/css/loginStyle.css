@@ -5,7 +5,7 @@ body{
     font-family: 'Jost', sans-serif;
     color: white;
     transition: .8s ease-in-out ;
-    background: url(/mydist/img/rsud-rubini-mpw.jpg);
+    background: url(/mydist/img/rs_rubini.jpg);
     background-repeat: no-repeat;
     background-size: cover;
 }
