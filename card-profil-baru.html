@@ -17,6 +17,7 @@
 <body>
 
     <div class="container p-5">
+        <!-- card -->
         <div class="card7 bg-white p-2 shadow-sm border-2">
             <div class="row">
                 <div class="col-md-12 d-flex flex-column align-items-center">
@@ -32,13 +33,74 @@
                 </div>
             </div>
         </div>
+        <!-- card -->
+
+<!-- -----------------------------------dibawah untuk dokumtasi--------------------------------------------------------------------------------- -->
+        <p>Download background cardnya <a href="https://drive.google.com/file/d/1M9FJN6yq-D3Hseh-es1rV9-YXWuFc1LC/view?usp=share_link">Download here (wave-haikei.svg)</a> dan simpan di mydist/img</p>
+
+        <h5>HTML</h5>
+        <pre style="font-size:10px;">
+            &lt;div class="card7 bg-white p-2 shadow-sm border-2"&gt;
+                    &lt;div class="row"&gt;
+                        &lt;div class="col-md-12 d-flex flex-column align-items-center"&gt;
+                            &lt;div class="imgBox"&gt;
+                                &lt;img src="./mydist/img/foto.jpg" alt="foto"&gt;
+                            &lt;/div&gt;
+                            &lt;span class="fw-bold"&gt;Al Ustad H.Lalu Muhammad Umamul Jihad, A.md.Kom&lt;/span&gt;
+                            &lt;span class="text-muted fw-bold mt-1"&gt;098765431231231&lt;/span&gt;
+                            &lt;span class="badge bg-green-lt mt-1"&gt;Jabatan&lt;/span&gt;
+                            &lt;span class="mt-1 button"&gt;&lt;a href="" class="btn btn-green"&gt;Detail&lt;/a&gt;&lt;/span&gt;
+                            &lt;span class="mt-1 button"&gt;&lt;a href="" class="btn btn-primary"&gt;Edit&lt;/a&gt;&lt;/span&gt;
+                            &lt;span class="mt-1 button"&gt;&lt;a href="" class="btn btn-danger"&gt;DLL&lt;/a&gt;&lt;/span&gt;
+                        &lt;/div&gt;
+                    &lt;/div&gt;
+                &lt;/div&gt; 
+        </pre>
+
+        <h5>Tambahan di mystyle.css</h5>
+        <pre style="font-size:10px;">
+            /* profil-card-7 */
+            .card7{
+                width: 150px;
+                border-radius: 5px;
+                text-align: center;
+                background: url(/mydist/img/wave-haikei.svg);
+                background-repeat: no-repeat;
+                background-size: cover;
+            }
+            .card7 span{
+                font-size: 8px;
+            }
+            .card7 .imgBox{
+                width :50px ;
+                height: 50px;
+                background: #fff;
+                border-radius: 50%;
+                overflow: hidden;
+                border: 3px solid white;
+            }
+            .card7 .imgBox img{
+                width: 100%;
+                height: 100%;
+                object-fit: cover;
+            }
+
+            .card7 span a{
+                font-size: 8px;
+            }
+
+            .card7 span .btn{
+                padding: 3px;
+                width: 100%;
+            }
+            .card7 .button{
+                width: 100%;
+            }
+            /* profil-card-7 */
+        </pre>
+
     </div>
 
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
-      <!-- AOS -->
       <script src="/dist/js/tabler.min.js"></script>
 </body>
 </html>
