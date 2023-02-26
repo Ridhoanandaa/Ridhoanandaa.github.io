@@ -489,3 +489,46 @@ footer ol ul{
     background-repeat: no-repeat;
     background-size: cover;
 }
+
+/* profil-card-7 */
+.card7{
+    width: 150px;
+    border-radius: 5px;
+    text-align: center;
+    background: url(/mydist/img/wave-haikei.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.card7 span{
+    font-size: 8px;
+}
+.card7 .imgBox{
+    width :50px ;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 3px solid white;
+}
+.card7 .imgBox img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.card7 span a{
+    font-size: 8px;
+}
+
+.card7 span .btn{
+    padding: 3px;
+    width: 100%;
+}
+
+.card7 .button{
+    width: 100%;
+}
+/* profil-card-7 */
+
+
