@@ -1,0 +1,18 @@
+.main {
+    background: url(/mydist/img/rs_rubini_3.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-x: -250px;
+}
+
+.main .content{
+    width: 40%;
+    /* text-shadow: 1px 1px 10px #000; */
+    margin-top: 50px;
+}
+.main .content .text a{
+    text-shadow: none
+}
+.main .content .text span{
+    width: 100%;
+}
