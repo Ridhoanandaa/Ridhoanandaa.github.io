@@ -1,18 +1,21 @@
 *{
     padding: 0;
 }
-
+body{
+    overflow: hidden;
+}
 .main{
-    background: url(/mydist/img/bgLogin1.jpg);
+    background: url(/mydist/img/rs_rubini_4.jpg);
     background-repeat: no-repeat;
     background-size: cover;
+    background-position-y: -100px ;
 }
 
 .content{
     height: 100vh;
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content:end;
     align-items: center;
     padding: 50px;
     box-sizing: border-box;
@@ -56,7 +59,7 @@
     text-align: center;
 }
 img{
-    width: 200px;
+    width: 150px;
     height: 200px;
 }
 
