@@ -1,0 +1,697 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./dist/css/tabler.min.css" rel="stylesheet"/>
+    <link href="./dist/css/tabler-flags.min.css" rel="stylesheet"/>
+    <link href="./dist/css/tabler-payments.min.css" rel="stylesheet"/>
+    <link href="./dist/css/tabler-vendors.min.css" rel="stylesheet"/>
+    <link href="./dist/css/demo.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" type="text/css" href="./mydist/css/mystyle.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+      <aside class="navbar navbar-vertical navbar-expand-lg bg-nav-line triggeraside sliderNav" style=" transition: .2s ease-in-out;">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-menu">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <h1 class="navbar-brand navbar-brand-autodark">
+            <a href=".">
+              <h3 class="text-green" style="font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;">Aplikasi</h3>
+            </a>
+          </h1>
+            <div class="container-fluid d-flex justify-content-center">
+              <div class="profil-img imgbox-profil-navbar d">
+                <img src="mydist/img/foto.jpg" alt="photo">
+              </div>
+            </div>
+            <div class="name nav-link-title text-center mt-1 border-bottom">
+              <h5>Ridho Ananda</h5>
+            </div>
+          <div class="navbar-nav flex-row d-lg-none">
+            <a href="?theme=dark" class="nav-link px-0 hide-theme-dark" title="Enable dark mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <!-- Download SVG icon from http://tabler-icons.io/i/moon -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 3c.132 0 .263 0 .393 0a7.5 7.5 0 0 0 7.92 12.446a9 9 0 1 1 -8.313 -12.454z" /></svg>
+            </a>
+            <a href="?theme=light" class="nav-link px-0 hide-theme-light" title="Enable light mode" data-bs-toggle="tooltip" data-bs-placement="bottom">
+              <!-- Download SVG icon from http://tabler-icons.io/i/sun -->
+              <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><circle cx="12" cy="12" r="4" /><path d="M3 12h1m8 -9v1m8 8h1m-9 8v1m-6.4 -15.4l.7 .7m12.1 -.7l-.7 .7m0 11.4l.7 .7m-12.1 -.7l-.7 .7" /></svg>
+            </a>
+            <div class="nav-item dropdown d-none d-md-flex me-3">
+              <a href="#" class="nav-link px-0" data-bs-toggle="dropdown" tabindex="-1" aria-label="Show notifications">
+                <!-- Download SVG icon from http://tabler-icons.io/i/bell -->
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M10 5a2 2 0 0 1 4 0a7 7 0 0 1 4 6v3a4 4 0 0 0 2 3h-16a4 4 0 0 0 2 -3v-3a7 7 0 0 1 4 -6" /><path d="M9 17v1a3 3 0 0 0 6 0v-1" /></svg>
+                <span class="badge bg-red"></span>
+              </a>
+            </div>
+            <!-- <div class="nav-item dropdown">
+              <a href="#" class="nav-link d-flex lh-1 text-reset p-0" data-bs-toggle="dropdown" aria-label="Open user menu">
+                <span class="avatar avatar-sm" style="background-image: url(./static/avatars/000m.jpg)"></span>
+                <div class="d-none d-xl-block ps-2">
+                  <div>Paweł Kuna</div>
+                  <div class="mt-1 small text-muted">UI Designer</div>
+                </div>
+              </a>
+              <div class="dropdown-menu dropdown-menu-end dropdown-menu-arrow">
+                <a href="#" class="dropdown-item">Set status</a>
+                <a href="#" class="dropdown-item">Profile & account</a>
+                <a href="#" class="dropdown-item">Feedback</a>
+                <div class="dropdown-divider"></div>
+                <a href="#" class="dropdown-item">Settings</a>
+                <a href="#" class="dropdown-item">Logout</a>
+              </div>
+            </div> -->
+          </div>
+          <div class="collapse navbar-collapse" id="navbar-menu">
+            <ul class="navbar-nav pt-lg-3">
+              <li class="nav-item ">
+                <a class="nav-link" href="./index.html" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/home -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="5 12 3 12 12 3 21 12 19 12" /><path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" /><path d="M9 21v-6a2 2 0 0 1 2 -2h2a2 2 0 0 1 2 2v6" /></svg>
+                  </span>
+                  <span class="nav-link-title ">
+                    Dashboard
+                  </span>
+                </a>
+              </li>
+              <li class="nav-item dropdown link-active">
+                <a class="nav-link dropdown-toggle" href="#navbar-base" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/package -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><polyline points="12 3 20 7.5 20 16.5 12 21 4 16.5 4 7.5 12 3" /><line x1="12" y1="12" x2="20" y2="7.5" /><line x1="12" y1="12" x2="12" y2="21" /><line x1="12" y1="12" x2="4" y2="7.5" /><line x1="16" y1="5.25" x2="8" y2="9.75" /></svg>
+                  </span>
+                  <span class="nav-link-title">
+                    Master
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <div class="dropdown-menu-columns">
+                    <div class="dropdown-menu-column">
+                      <a class="dropdown-item" href="./empty.html" >
+                        Data Pegawai
+                      </a>
+                      <a class="dropdown-item" href="./accordion.html" >
+                        Data Pengkat
+                      </a>
+                      <a class="dropdown-item" href="./accordion.html" >
+                        Data Jabatan
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#navbar-extra" data-bs-toggle="dropdown" data-bs-auto-close="false" role="button" aria-expanded="false" >
+                  <span class="nav-link-icon d-md-none d-lg-inline-block"><!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round"><path stroke="none" d="M0 0h24v24H0z" fill="none"/><path d="M12 17.75l-6.172 3.245l1.179 -6.873l-5 -4.867l6.9 -1l3.086 -6.253l3.086 6.253l6.9 1l-5 4.867l1.179 6.873z" /></svg>
+                  </span>
+                  <span class="nav-link-title">
+                    DUK
+                  </span>
+                </a>
+                <div class="dropdown-menu">
+                  <a class="dropdown-item" href="./activity.html" >
+                    Data Pegawai Urut
+                  </a>
+                  <a class="dropdown-item" href="./gallery.html" >
+                    Notifikasi
+                  </a>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </aside>
+      <div class="page-wrapper triggerContent contentSlider" style=" transition: .4s ease-in-out;">
+        
+        <div class="container-fluid">
+        <!-- header -->
+        <div class="row">
+            <div class="col-12 p-3 bg-green-lt">
+                <div class="row">
+                    <div class="col-11">
+                        <button class="btn btnslide">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-menu-2" width="28" height="28" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+                                <path d="M4 6l16 0"></path>
+                                <path d="M4 12l16 0"></path>
+                                <path d="M4 18l16 0"></path>
+                             </svg>
+                        </button>
+                    </div>
+                    <div class="col-1">
+                        <h2 class="page-title">Dashboard</h2>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- header -->
+        <div class="alert alert-success alert-dismissible fade show mt-2 d-flex justify-content-between align-items-center" role="alert">
+            <strong>Data Pegawai Pensiun....</strong>
+            <a href="" class="btn btn-green">Lihat</a>
+        </div>
+          <div class="row mt-1">
+            <div class="col-sm-6">
+                <div class="hr-text">Jenis Kelamin</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- widget-1 -->
+                        <div class="card " style=" height: 192px; overflow: hidden;">
+                            <div class="row" style="height: 60%;">
+                                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-gender-female" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M8 1a4 4 0 1 0 0 8 4 4 0 0 0 0-8zM3 5a5 5 0 1 1 5.5 4.975V12h2a.5.5 0 0 1 0 1h-2v2.5a.5.5 0 0 1-1 0V13h-2a.5.5 0 0 1 0-1h2V9.975A5 5 0 0 1 3 5z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40%;">
+                                <div class="col-8 border-end bg-green-lt d-flex flex-column-reverse justify-content-center align-items-center">
+                                    <h1 class="display-6" style="color: green;">100</h1>
+                                    <small class="text-green">Perempuan</small>
+                                </div>
+                                <div class="col-4 bg-green-lt d-flex justify-content-center align-items-center">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget-1 -->  
+                        <!-- widget-1 -->
+                        <div class="card mt-2" style=" height: 192px; overflow: hidden;">
+                            <div class="row bg-white" style="height: 60%;">
+                                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="75" height="75" fill="currentColor" class="bi bi-gender-male" viewBox="0 0 16 16">
+                                        <path fill-rule="evenodd" d="M9.5 2a.5.5 0 0 1 0-1h5a.5.5 0 0 1 .5.5v5a.5.5 0 0 1-1 0V2.707L9.871 6.836a5 5 0 1 1-.707-.707L13.293 2H9.5zM6 6a4 4 0 1 0 0 8 4 4 0 0 0 0-8z"/>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40%;">
+                                <div class="col-8 bg-green-lt  d-flex flex-column-reverse justify-content-center align-items-center">
+                                    <h1 class="display-6 " style="color: green;">100</h1>
+                                    <small class="" style="color: green;">Laki Laki</small>
+                                </div>
+                                <div class="col-4 bg-green-lt d-flex justify-content-center align-items-center">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="50" height="50" fill="green" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget-1 -->                     
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div>
+                                <canvas id="myChartDonat"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-6">
+                <div class="hr-text">Status</div>
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div>
+                                <canvas id="myChartDonatStatus"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <!-- widget-1 -->
+                        <div class="card" style=" height: 130px; overflow: hidden;">
+                            <div class="row bg-green-lt" style="height: 60%;">
+                                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                    <h5 class="display-6">100</h5>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40%;">
+                                <div class="col-8  bg-green d-flex flex-column-reverse justify-content-center align-items-center">
+                                    <h1 class=" text-white">Fungsional</h1>
+                                </div>
+                                <div class="col-4 bg-green-lt border-top d-flex justify-content-center align-items-center">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="green" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget-1 -->  
+                        <!-- widget-1 -->
+                        <div class="card mt-2" style=" height: 130px; overflow: hidden;">
+                            <div class="row bg-green-lt" style="height: 60%;">
+                                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                    <h5 class="display-6">100</h5>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40%;">
+                                <div class="col-8  bg-green d-flex flex-column-reverse justify-content-center align-items-center">
+                                    <h1 class=" text-white">Non Fungsional</h1>
+                                </div>
+                                <div class="col-4 bg-green-lt border-top d-flex justify-content-center align-items-center">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="Green" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget-1 -->                     
+                        <!-- widget-1 -->
+                        <div class="card mt-2" style=" height: 130px; overflow: hidden;">
+                            <div class="row bg-green-lt" style="height: 60%;">
+                                <div class="col-lg-12 d-flex justify-content-center align-items-center">
+                                    <h5 class="display-6">100</h5>
+                                </div>
+                            </div>
+                            <div class="row" style="height: 40%;">
+                                <div class="col-8  bg-green d-flex flex-column-reverse justify-content-center align-items-center">
+                                    <h1 class=" text-white">Non Fungsional</h1>
+                                </div>
+                                <div class="col-4 bg-green-lt border-top d-flex justify-content-center align-items-center">
+                                    <a href="">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="Green" class="bi bi-arrow-right-circle-fill" viewBox="0 0 16 16">
+                                            <path d="M8 0a8 8 0 1 1 0 16A8 8 0 0 1 8 0zM4.5 7.5a.5.5 0 0 0 0 1h5.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3a.5.5 0 0 0 0-.708l-3-3a.5.5 0 1 0-.708.708L10.293 7.5H4.5z"/>
+                                        </svg>
+                                    </a>
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- widget-1 -->                     
+                    </div>
+                </div>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="hr-text hr-text">Tingkat Pendidikan</div>
+            <div class="col-md-8">
+                <div class="row">
+                    <div class="col-md-6">
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>SMA</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>D3</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+                        <div class="card mt-2">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>S1</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                    </div>
+                    <div class="col-lg-6">
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>D1</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>D2</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+                        <div class="card">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>S2</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                        <!-- card -->
+                        <div class="card mt-2">
+                            <div class="card-body border-bottom" style="height: 5rem">
+                            <h1>50</h1>
+                            <p>Keterangan</p>
+                            </div>
+                            <div class="ribbon ribbon-bookmark bg-green" style="width:100px; height: 3rem;">
+                            <!-- Download SVG icon from http://tabler-icons.io/i/star -->
+                                <h2>S3</h2>
+                            </div>
+                            <div class="row">
+                            <div class="col-md-12 p-2 d-flex justify-content-center">
+                                <a href="">Lihat Detail</a>
+                            </div>
+                            </div>
+                        </div>
+                        <!-- card -->
+                    </div>
+                </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="card">
+                        <div>
+                            <canvas id="myChartLineTingkatPendidikan"></canvas>
+                        </div>
+                    </div>
+                </div>
+          </div>
+
+          <div class="card p-3 mt-3">
+            <h2>Profesi</h2>
+            <div class="table-responsive">
+                <table class="table table-vcenter">
+                    <thead>
+                    <tr>
+                        <th>Nama Profesi</th>
+                        <th>Jumlah</th>
+                        <th>Jumah Laki Laki</th>
+                        <th>Jumlah Perempuan</th>
+                        <th class="w-1">Akssi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >Dokter</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Farmasi</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Admin</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+          </div>
+          <div class="card p-3 mt-3">
+            <h2>Data 2</h2>
+            <div class="table-responsive">
+                <table class="table table-vcenter">
+                    <thead>
+                    <tr>
+                        <th>Nama Profesi</th>
+                        <th>Jumlah</th>
+                        <th>Jumah Laki Laki</th>
+                        <th>Jumlah Perempuan</th>
+                        <th class="w-1">Akssi</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr>
+                        <td >Dokter</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Farmasi</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td >Admin</td>
+                        <td class="text-muted" >200</td>
+                        <td class="text-muted" ><a href="#" class="text-reset">100</a></td>
+                        <td class="text-muted" >100</td>
+                        <td>
+                            <a class="btn btn-success" href="#">Detail</a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
+                </div>
+          </div>
+
+        </div>
+
+          <!-- footer -->
+    <div class="footer p-4 mt-4">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-6">
+                  <span style="color: gray;">
+                      <p >@copyright.Bangbang-Tech.2023. all right serve suppport by tabler.io</p>
+                  </span>
+              </div>
+              <div class="col-md-6 d-flex justify-content-end">
+                  <span style="color: gray;">
+                      <p>linsensi.About Me</p>
+                  </span>
+              </div>
+          </div>
+      </div>
+  </div>
+  <!-- footer -->
+      </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="/dist/js/tabler.min.js"></script>
+    <script src="/dist/js/demo.min.js"></script>
+    <script src="/dist/libs/apexcharts/dist/apexcharts.min.js"></script>
+    <script>
+        const ctx = document.getElementById('myChartDonat');
+
+        new Chart(ctx, {
+            type: 'doughnut',
+            data: {
+            labels: ['Red', 'Blue'],
+            datasets: [{
+                label: '# of Votes',
+                data: [12, 19],
+                borderWidth: 1,
+                backgroundColor: [
+                    "#F20AB0",
+                    "#56d712",
+                ],
+
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            },
+            plugins: {
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 8
+                            }
+                        }
+                    }
+            }
+            }
+        });
+    </script>
+    <script>
+        const ctx2 = document.getElementById('myChartDonatStatus');
+        new Chart(ctx2, {
+            type: 'doughnut',
+            data: {
+            labels: ['fungsional','non fungsional','struktural'],
+            datasets: [{
+                label: '# of Votes',
+                data: [2, 3, 4],
+                borderWidth: 1,
+                backgroundColor: [
+                    "#5FED9F",
+                    "#3D9AD9",
+                    "#FC9312",
+                ],
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            },
+            plugins: {
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 8
+                            }
+                        }
+                    }
+            }
+            }
+        });
+    </script>
+    <script>
+        const ctx3 = document.getElementById('myChartLineTingkatPendidikan');
+
+        new Chart(ctx3, {
+            type: 'doughnut',
+            data: {
+            labels: ['SMA','D1','D2','D3', 'S1', 'S2', 'S3'],
+            datasets: [{
+                label: '# of Votes',
+                data: [10,20,9,12, 19, 3, 5],
+                borderWidth:1,
+                backgroundColor : [
+                    '#DB5461',
+                    '#16BAC5',
+                    '#1CFEBA',
+                    '#E07BE0',
+                    '#0B3948',
+                    '#416165',
+                    '#ACB0BD',
+                ]
+            }]
+            },
+            options: {
+            scales: {
+                y: {
+                beginAtZero: true
+                }
+            },
+            plugins: {
+                    legend: {
+                        labels: {
+                            // This more specific font property overrides the global property
+                            font: {
+                                size: 8
+                            }
+                        }
+                    }
+            }
+            }
+        });
+    </script>
+    <script>
+        var btn = document.querySelector(".btnslide");
+        var aside = document.querySelector('.triggeraside');
+        var content = document.querySelector('.triggerContent');
+        btn.addEventListener('click', function(){
+            aside.classList.toggle('sliderNav');
+            content.classList.toggle('contentSlider');
+        });
+
+        var a = window.matchMedia("(max-width: 700px)")
+        function mediaQueryFunction(match){
+            if (match.matches){
+                aside.classList.remove('sliderNav');
+                content.classList.remove('contentSlider');
+            }else {
+                aside.classList.toggle('sliderNav');
+                content.classList.toggle('contentSlider');
+            }
+        }
+
+        mediaQueryFunction(a);
+        a.addListener(mediaQueryFunction);
+    </script>
+</body>
+</html>
