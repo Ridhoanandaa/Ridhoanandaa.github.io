@@ -531,4 +531,16 @@ footer ol ul{
 }
 /* profil-card-7 */
 
+/* sliderNav */
+.contentSlider{
+    position: relative; 
+    left: -240px; 
+    width: 100%;
+
+}
+
+.wrapper .sliderNav{
+    position: fixed; 
+    left: -500px;
+}
 
